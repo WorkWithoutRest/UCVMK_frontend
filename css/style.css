@@ -1,0 +1,138 @@
+@import url(reset.css);
+
+body{
+	font: 12px/1.4 Tahoma, Arial, Verdana, sans-serif;
+	color: #333;
+
+}
+
+#menu{
+	position: relative;
+	width: 1280px;
+	height: 200px;
+}
+
+.design {
+	text-align: center;
+	position: relative;
+	left: 60px;
+	margin-left: 30px;
+	padding:30px;
+	 width: 94px;
+   	height: 27px;
+    display: inline-block; /* Строчно-блочный элемент */
+    padding: 5px 20px; /* Добавляем поля */
+    text-decoration: none; /* Убираем подчёркивание у ссылки */
+    cursor: pointer; /* Курсор в виде руки */
+    background: #012A77; /* Фон для браузеров, не поддерживающих градиент */
+    /* Градиент */
+    
+    border-radius: 10px; /* Скругляем уголки */
+ 
+    color: white; /* Цвет текста и ссылки */
+   }
+
+ #menu1{
+ 	width: 1280px;
+ 	height: 180px;
+ 	background: #012A77;
+ 	display: block;
+ 	margin-top: 10px;
+
+ }
+
+ .logo{
+ 	left: 95px;
+ 	top: 26px;
+ 	position: relative;
+ }
+
+ h1{
+ 	color: white;
+ 	position: relative;
+ 	left: 230px;
+ 	bottom: 100px;
+ 	margin-top: 10px;
+ }
+
+ .header{
+ 	width: 1285px;
+ 	height: 835px;
+ 	background: #E3E3E3;
+ 	position: relative;
+ 	top: 0px;
+ 	font-size: 15px;
+
+ 	
+ }
+ 
+ 
+ 
+
+ .menu-header{
+ 	width: 325px;
+ 	height: 50px;
+ 	line-height: 40px;
+ 	text-align: center;
+ 	background: white;
+ 	cursor: pointer;
+ 	position: relative;
+ 	left: 850px;
+ 	top:10px;
+
+
+
+ }	
+
+
+ul{
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+ li {
+ 	display: block;
+ 	width: 200px;
+ 	height: 40px;
+ 	text-align: center;
+ 	background: white;
+ 	cursor: pointer;
+ }
+
+
+ ul: hover {
+ 	display: block;
+ }
+
+ h3 {
+ 	font-weight: 600;
+ 	font-size: 25px;
+ 	padding: 0px;
+ 	margin: 0;
+ 	width: 326px;
+ 	height: 40px;
+ 	background: #012A77;
+ 	border-radius: 15px 15px 0 0;
+ 	text-align: center;
+ 	color: white; 
+ 	position: relative;
+ 	left: 850px;
+ 	top: 10px;
+	}
+
+.footer {
+	width: 1280px;
+	height: 30px;
+	background: #012A77;
+	position: relative;
+}
+
+.header h1 {
+	color: black;
+	margin: 0;
+	top: 45px;
+	text-align: center;
+	
+	position: relative;
+}
