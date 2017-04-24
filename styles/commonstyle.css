@@ -171,37 +171,51 @@ aside{
 	margin: .5em 0;
 }
 
-.tree_category{
-	border-left: .2em solid var(--blue);
-	padding: .2em;
+input {
+  display: none;
+  visibility: hidden;
 }
 
-
-summary::-webkit-details-marker {
-  display: none
-}
-summary{
+label {
 	border-left: .2em solid var(--blue);
 	padding: .5em;
 	padding-left: 1em;
+	padding-right: 0;
 	outline: none;
 	cursor: pointer;
 	margin-top: .5em;
 	font-weight: bold;
+	display: block;
 }
 
-details div{
+.expand{
+	height: 0px;
+	overflow: hidden;
+	color: #000;
+}
+
+.toggle:checked ~ .expand{
+	height: auto;
+}
+
+
+.inner_course{
 	border-left: .2em solid var(--blue);
 	padding-left: .2em;
 	margin-top: .5em;
 }
 
-details div a{
+.inner_course a{
 	display: block;
 	border-left: .2em solid var(--blue);
 	padding: .5em;
 	padding-left: 1em;
+	padding-right: 0;
 	text-decoration: none;
+}
+
+.tree div label{
+	padding-right: 0;
 }
 
 /*---------------*/
