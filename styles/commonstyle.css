@@ -10,7 +10,8 @@ dir{
 body{
 	background-color: #E3E3E3;
 	margin: 0px;
-	font-family: Arial;
+	/*font-family: Arial;*/
+	font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
 /*---------------*/
@@ -130,7 +131,7 @@ header{
 /*---------------*/
 main{
 	width: 765px;
-	height: 1000px;
+	/*height: 1000px;*/
 	background-color: white;
 	border-radius: 15px;
 	margin: .5em 0;
@@ -171,37 +172,51 @@ aside{
 	margin: .5em 0;
 }
 
-.tree_category{
-	border-left: .2em solid var(--blue);
-	padding: .2em;
+input {
+  display: none;
+  visibility: hidden;
 }
 
-
-summary::-webkit-details-marker {
-  display: none
-}
-summary{
+label {
 	border-left: .2em solid var(--blue);
 	padding: .5em;
 	padding-left: 1em;
+	padding-right: 0;
 	outline: none;
 	cursor: pointer;
 	margin-top: .5em;
 	font-weight: bold;
+	display: block;
 }
 
-details div{
+.expand{
+	height: 0px;
+	overflow: hidden;
+	color: #000;
+}
+
+.toggle:checked ~ .expand{
+	height: auto;
+}
+
+
+.inner_course{
 	border-left: .2em solid var(--blue);
 	padding-left: .2em;
 	margin-top: .5em;
 }
 
-details div a{
+.inner_course a{
 	display: block;
 	border-left: .2em solid var(--blue);
 	padding: .5em;
 	padding-left: 1em;
+	padding-right: 0;
 	text-decoration: none;
+}
+
+.tree div label{
+	padding-right: 0;
 }
 
 /*---------------*/
@@ -216,4 +231,69 @@ footer{
 	vertical-align: middle;
 	background-color: var(--blue);
 	line-height: 2.5em;
+}
+
+/*---------------*/
+/*Общее*/
+/*---------------*/
+.text{
+	display: block;
+	height: auto;
+	/*text-align: justify;*/
+}
+
+h2{
+	margin: 0;
+	font-size: 1.3em;
+}
+
+/*---------------*/
+/*о нас*/
+/*---------------*/
+
+.about_us_container{
+	padding: 20px;
+	width: 725px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_column{
+	display: flex;
+	/*align-content: center;*/
+	flex-direction: column;
+}
+
+
+
+
+.card{
+	width: 335px;
+}
+
+.card + .card{
+	margin-top: 5px;
+}
+
+.stuff_card{
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+}
+
+.stuff_photo{
+	width: 60px;
+	height: 75px;
+	background-color: #ccc;
+	float: left;
+}
+
+.stuff_info{
+	padding-left: 10px;
+	float: left;
+	width: 265px;
+}
+
+.stuff_info p{
+	margin: 10px 0;
 }
