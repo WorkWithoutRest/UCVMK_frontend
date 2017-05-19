@@ -1,5 +1,6 @@
 :root{
 	--blue: #012A77;
+	--grey: #E3E3E3;
 }
 
 dir{
@@ -8,7 +9,7 @@ dir{
 }
 
 body{
-	background-color: #E3E3E3;
+	background-color: var(--grey);
 	margin: 0px;
 	/*font-family: Arial;*/
 	font-family: "Helvetica Neue",Arial,sans-serif;
@@ -247,10 +248,14 @@ h2{
 	font-size: 1.3em;
 }
 
+h1{
+	text-align: center;
+	margin-top: 0;
+}
+
 /*---------------*/
 /*о нас*/
 /*---------------*/
-
 .about_us_container{
 	padding: 20px;
 	width: 725px;
@@ -264,9 +269,6 @@ h2{
 	/*align-content: center;*/
 	flex-direction: column;
 }
-
-
-
 
 .card{
 	width: 335px;
@@ -296,4 +298,57 @@ h2{
 
 .stuff_info p{
 	margin: 10px 0;
+}
+
+/*---------------*/
+/*Курс*/
+/*---------------*/
+
+/*Его отсуда бы потом вынести на более общий уровень*/
+.main_container{
+	padding: 20px;
+	width: 725px;
+}
+
+.course_info{
+	float: right;
+	width: 250px;
+	border-left: .2em solid var(--blue);
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.open_registration, .registration, .prepod_link, .plain_text{
+	padding-left: 30px;
+}
+
+.course_info{
+	padding: 10px;
+	padding-right: 0;
+}
+
+.course_info_part_content{
+	width: auto;	
+	padding: 1em 0;
+}
+.course_info_part_content p{
+	margin: 0;
+}
+
+.open_registration{
+	font-weight: bold;
+	color: green;
+}
+
+.prepod_link{
+	display: block;
+}
+
+.course_registration_button{
+	background-color: var(--grey);
+	border: 1px solid grey;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 2em;
+	font-weight: bold;
 }
