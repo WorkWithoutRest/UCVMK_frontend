@@ -352,3 +352,52 @@ h1{
 	line-height: 2em;
 	font-weight: bold;
 }
+
+/*---------------*/
+/*Главная*/
+/*---------------*/
+.news{
+	margin-top: 20px;
+}
+
+.news_item{
+	margin: 1em 0;
+}
+
+.innews_date{
+	color: gray;
+	margin: 0;
+	margin-bottom: .3em;
+}
+
+.innews_course{
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+
+.more_news_button{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 2em;
+	height: 25px;
+	width: 50px;
+}
+
+.more_news_button:hover{
+	cursor: pointer;
+}
+
+svg{
+	height: 20px;
+	width: 40px;
+	padding: 3px;
+}
+
+svg polyline{
+	stroke: black;
+	stroke-width: 4;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	fill: none;
+}
