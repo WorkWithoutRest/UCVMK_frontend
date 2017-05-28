@@ -449,7 +449,7 @@ svg polyline{
 	justify-content: center;
 }
 
-.docs_banners_placeholder1, .docs_banners_placeholder2{
+ .docs_banner{
 	flex-shrink: 0;
 	flex-grow: 0;
 	margin: 10px;
