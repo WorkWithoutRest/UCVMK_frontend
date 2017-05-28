@@ -100,29 +100,23 @@
 		<aside>
 			<dir class="aside_header">Наши курсы</dir>
 			<dir class="tree">
-				<div>
-				    <details>
-				    <summary>
-						Курсы для кого-то
-					</summary>
-				    	<div><a href="">Курс такой-то</a></div>
-				    	<div><a href="">Курс такой-то<br>Курс такой-тоКурс такой-то</a></div>
-				    	<div><a href="">Курс такой-то</a></div>
-				    </details>
-				</div>
-				<div>
-				    <details>
-				    <summary>
-						Курсы для кого-то ещё
-					</summary>
-				    	<div><a href="">Курс такой-то</a></div>
-				    	<div><a href="">Курс такой-то<br>Курс такой-тоКурс такой-то</a></div>
-				    	<div><a href="">Курс такой-то</a></div>
-				    </details>
-				</div>
+				<dir>
+					<input class="toggle" id="toggle1" type="checkbox" unchecked>
+					<label for="toggle1">Курсы для кого-то</label>
+					<div class="expand">
+					    <div class="inner_course"><a href="">Курс такой-то</a></div>
+					    <div class="inner_course"><a href="">Курс такой-то<br>Курс такой-тоКурс такой-то</a></div>
+					</div>
+				</dir>
+				<dir>
+					<input class="toggle" id="toggle2" type="checkbox" unchecked>
+					<label for="toggle2">Курсы для кого-то ещё</label>
+					<div class="expand">
+					    <div class="inner_course"><a href="">Курс такой-то</a></div>
+					    <div class="inner_course"><a href="">Курс такой-то</a></div>
+					</div>
+				</dir>	
 			</dir>
-
-
 		</aside>
 	</dir>
 	<footer>© Казанский федеральный университет, 2017</footer>
