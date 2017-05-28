@@ -435,3 +435,34 @@ svg polyline{
 	display: block;
 	padding-left: 30px;
 }
+
+/*---------------*/
+/*Документы*/
+/*---------------*/
+.docs_list{
+	line-height: 1.5em;
+}
+
+.docs_banners{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.docs_banners_placeholder1, .docs_banners_placeholder2{
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin: 10px;
+}
+
+.docs_banners_placeholder1{
+	background-color: blue;
+	height: 500px;
+	width: 300px;
+}
+
+.docs_banners_placeholder2{
+	background-color: green;
+	height: 600px;
+	width: 250px;
+}
