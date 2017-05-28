@@ -466,3 +466,29 @@ svg polyline{
 	height: 600px;
 	width: 250px;
 }
+
+/*---------------*/
+/*Расписание*/
+/*---------------*/
+.course_schedule + .course_schedule{
+	margin-top: 30px;
+}
+
+.scheule_table{
+	width: 100%;
+    background: white; 
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+    line-height: 2em;
+    table-layout: fixed;
+    margin-top: 15px;
+}
+
+.scheule_table tr,th,td{
+	border: 1px solid black;
+}
+
+.scheule_table th{
+	background-color: var(--grey);
+}
