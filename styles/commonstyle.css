@@ -401,3 +401,37 @@ svg polyline{
 	stroke-linecap: round;
 	fill: none;
 }
+
+/*---------------*/
+/*Центр*/
+/*---------------*/
+.contact_main{
+	display: flex;
+	padding: 0;
+	/*height: 350px;*/
+}
+
+.map{
+	width: 75%;
+	/*height: 400px;*/
+	float: left;
+	/*background-color: yellow;*/
+	border: .1em solid grey;
+}
+
+.contacts_container{
+	flex-grow:1;
+	float: right;
+/*	height: 400px;*/
+	/*width: 29%;*/
+	border-left: .2em solid var(--blue);
+/*	margin-bottom: 10px;*/
+	margin-left: 10px;
+	padding: 10px;
+	padding-bottom: 0;
+}
+
+.mail_link{
+	display: block;
+	padding-left: 30px;
+}
