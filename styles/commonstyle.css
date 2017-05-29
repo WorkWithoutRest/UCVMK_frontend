@@ -1,16 +1,18 @@
 :root{
 	--blue: #012A77;
+	--grey: #E3E3E3;
 }
 
-dir{
+div{
 	margin: 0px;
 	padding: 0px;
 }
 
 body{
-	background-color: #E3E3E3;
+	background-color: var(--grey);
 	margin: 0px;
-	font-family: Arial;
+	/*font-family: Arial;*/
+	font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
 /*---------------*/
@@ -34,21 +36,21 @@ header{
 	width: 1100px;
 	margin: auto;
 	display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
+	justify-content: space-between;
+	padding: 0 50px;
 }
 
 .up_control_button{
 	display: inline-block;
-  	color: white;
-  	text-decoration: none;
-  	padding: .5em .6em;
-  	border-radius: 10px;
-  	background: var(--blue);
-  	margin-top: .3em;
-  	margin-bottom: .3em;
-  	line-height: 1em;
-  	font-size: .9em;
+	color: white;
+	text-decoration: none;
+	padding: .5em .6em;
+	border-radius: 10px;
+	background: var(--blue);
+	margin-top: .3em;
+	margin-bottom: .3em;
+	line-height: 1em;
+	font-size: .9em;
 }
 
 .up_control_button + .up_control_button{
@@ -62,9 +64,9 @@ header{
 	margin: auto;
 	background-color: var(--blue);
 	display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
 }
 
 .header_title_link_wraper{
@@ -84,9 +86,9 @@ header{
 	margin: 0em .5em;
 	color: white;
 	font-size: 2em;
-    line-height: 1.4em;
+	line-height: 1.4em;
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
 
 .header_title_text p{
@@ -102,9 +104,9 @@ header{
 
 .banners{
 	height: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .banner{
@@ -130,7 +132,7 @@ header{
 /*---------------*/
 main{
 	width: 765px;
-	height: 1000px;
+	/*height: 1000px;*/
 	background-color: white;
 	border-radius: 15px;
 	margin: .5em 0;
@@ -230,4 +232,316 @@ footer{
 	vertical-align: middle;
 	background-color: var(--blue);
 	line-height: 2.5em;
+}
+
+/*---------------*/
+/*Общее*/
+/*---------------*/
+.text{
+	display: block;
+	height: auto;
+	/*text-align: justify;*/
+}
+
+h2{
+	margin: 0;
+	font-size: 1.3em;
+}
+
+h1{
+	text-align: center;
+	margin-top: 0;
+}
+
+/*---------------*/
+/*о нас*/
+/*---------------*/
+.about_us_container{
+	padding: 20px;
+	width: 725px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_column{
+	display: flex;
+	/*align-content: center;*/
+	flex-direction: column;
+}
+
+.card{
+	width: 335px;
+}
+
+.card + .card{
+	margin-top: 5px;
+}
+
+.stuff_card{
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+}
+
+.stuff_photo{
+	width: 60px;
+	height: 75px;
+	background-color: #ccc;
+	float: left;
+}
+
+.stuff_info{
+	padding-left: 10px;
+	float: left;
+	width: 265px;
+}
+
+.stuff_info p{
+	margin: 10px 0;
+}
+
+/*---------------*/
+/*Курс*/
+/*---------------*/
+
+/*Его отсуда бы потом вынести на более общий уровень*/
+.main_container{
+	padding: 20px;
+	width: 725px;
+}
+
+.course_info{
+	float: right;
+	width: 250px;
+	border-left: .2em solid var(--blue);
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.open_registration, .registration, .prepod_link, .plain_text{
+	padding-left: 30px;
+}
+
+.course_info{
+	padding: 10px;
+	padding-right: 0;
+}
+
+.course_info_part_content{
+	width: auto;	
+	padding: 1em 0;
+}
+.course_info_part_content p{
+	margin: 0;
+}
+
+.open_registration{
+	font-weight: bold;
+	color: green;
+}
+
+.prepod_link{
+	display: block;
+}
+
+.course_registration_button{
+	background-color: var(--grey);
+	border: 1px solid grey;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 2em;
+	font-weight: bold;
+}
+
+/*---------------*/
+/*Главная*/
+/*---------------*/
+.news{
+	margin-top: 20px;
+}
+
+.news_item{
+	margin: 1em 0;
+}
+
+.innews_date{
+	color: gray;
+	margin: 0;
+	margin-bottom: .3em;
+}
+
+.innews_course{
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+
+.more_news_button{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 2em;
+	height: 25px;
+	width: 50px;
+}
+
+.more_news_button:hover{
+	cursor: pointer;
+}
+
+svg{
+	height: 20px;
+	width: 40px;
+	padding: 3px;
+}
+
+svg polyline{
+	stroke: black;
+	stroke-width: 4;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	fill: none;
+}
+
+/*---------------*/
+/*Центр*/
+/*---------------*/
+.contact_main{
+	display: flex;
+	padding: 0;
+	/*height: 350px;*/
+}
+
+.map{
+	width: 75%;
+	/*height: 400px;*/
+	float: left;
+	/*background-color: yellow;*/
+	border: .1em solid grey;
+}
+
+.contacts_container{
+	flex-grow:1;
+	float: right;
+/*	height: 400px;*/
+	/*width: 29%;*/
+	border-left: .2em solid var(--blue);
+/*	margin-bottom: 10px;*/
+	margin-left: 10px;
+	padding: 10px;
+	padding-bottom: 0;
+}
+
+.mail_link{
+	display: block;
+	padding-left: 30px;
+}
+
+/*---------------*/
+/*Документы*/
+/*---------------*/
+.docs_list{
+	line-height: 1.5em;
+}
+
+.docs_banners{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+ .docs_banner{
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin: 10px;
+}
+
+.docs_banners_placeholder1{
+	background-color: blue;
+	height: 500px;
+	width: 300px;
+}
+
+.docs_banners_placeholder2{
+	background-color: green;
+	height: 600px;
+	width: 250px;
+}
+
+/*---------------*/
+/*Расписание*/
+/*---------------*/
+.course_schedule + .course_schedule{
+	margin-top: 30px;
+}
+
+.scheule_table{
+	width: 100%;
+	background: white; 
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px solid black;
+	line-height: 2em;
+	table-layout: fixed;
+	margin-top: 15px;
+}
+
+.scheule_table tr,th,td{
+	border: 1px solid black;
+}
+
+.scheule_table th{
+	background-color: var(--grey);
+}
+
+
+
+
+
+
+/*---------------*/
+/*Авторизация/Регистрация*/
+/*---------------*/
+
+.overlay{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: collapse;
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+
+form input{
+	visibility: visible;
+	height: 2em;
+	width: 100%;
+	display: inline-block;
+	margin: 1em 0;
+}
+
+.checkbox{
+	width: auto;
+    display: inline-block;
+    height: auto;
 }

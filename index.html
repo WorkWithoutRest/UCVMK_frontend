@@ -5,66 +5,87 @@
  	<link rel="stylesheet" type="text/css" href="styles/commonstyle.css">
 </head>
 <body>
-	<dir class="up_controls_wrap">
-		<dir class="up_controls">
+	<div id="login_popup" class="overlay">
+		<div class="login popup">
+			<h2>Авторизация</h2>
+			<form method="post" >
+		        <input type="text" name="login" value="" placeholder="Username or Email">
+		        <input type="password" name="password" value="" placeholder="Password">
+		        <div><input class="checkbox" type="checkbox" name="remember_me" id="remember_me">Remember me on this computer</div>
+		        <input type="submit" name="commit" value="Login">
+	      	</form>
+		</div>
+	</div>
+	<div id="signup_popup" class="overlay">
+		<div class="signup popup">
+			<h2>Регистрация</h2>
+			<form method="post" >
+		        <input type="text" name="login" value="" placeholder="Username or Email">
+		        <input type="password" name="password" value="" placeholder="Password">
+		        <input type="submit" name="commit" value="regiter">
+	      	</form>
+		</div>
+	</div>
+	<div class="up_controls_wrap">
+		<div class="up_controls">
 			<nav>
 				<a class="up_control_button" href="">Документы</a>
 				<a class="up_control_button" href="">Расписание</a>
 				<a class="up_control_button" href="">Контакты</a>
 				<a class="up_control_button" href="">О нас</a>
 			</nav>
-			<dir class="user_controls">
-				<a class="up_control_button" href="">Вход</a>
-				<a class="up_control_button" href="">Регисрация</a>
-			</dir>
-		</dir>
-	</dir>
+			<div class="user_controls">
+				<a class="up_control_button" href="#login_popup">Вход</a>
+				<a class="up_control_button" href="#signup_popup">Регисрация</a>
+			</div>
+		</div>
+	</div>
 	<header>	
-		<dir class="other_header">
+		<div class="other_header">
 			<a class="header_title_link_wraper" href="">
-				<dir class="header_title">
+				<div class="header_title">
 					<img class="header_title_logo" src="resources/logo.png" width="110" height="130" alt="logo">
-					<dir class="header_title_text">
+					<div class="header_title_text">
 						Учебный центр дополнительных<br>образователных услуг<br>ИВМиИТ КФУ
-					</dir>
-				</dir>
+					</div>
+				</div>
 			</a>
 			
-			<dir class="banners">
+			<div class="banners">
 				<a class="banners_link_weaper" href="">
-					<dir class="banner"></dir>
+					<div class="banner"></div>
 				</a>
 				<a class="banners_link_weaper" href="">
-					<dir class="banner"></dir>
+					<div class="banner"></div>
 				</a>
-			</dir>
-		</dir>
+			</div>
+		</div>
 	</header>
-	<dir class="center_block">
+	<div class="center_block">
 		<main>
 			
 		</main>
 		<aside>
-			<dir class="aside_header">Наши курсы</dir>
-			<dir class="tree">
-				<dir>
+			<div class="aside_header">Наши курсы</div>
+			<div class="tree">
+				<div>
 					<input class="toggle" id="toggle1" type="checkbox" unchecked>
 					<label for="toggle1">Курсы для кого-то</label>
 					<div class="expand">
 					    <div class="inner_course"><a href="">Курс такой-то</a></div>
 					    <div class="inner_course"><a href="">Курс такой-то<br>Курс такой-тоКурс такой-то</a></div>
 					</div>
-				</dir>
-				<dir>
+				</div>
+				<div>
 					<input class="toggle" id="toggle2" type="checkbox" unchecked>
 					<label for="toggle2">Курсы для кого-то ещё</label>
 					<div class="expand">
 					    <div class="inner_course"><a href="">Курс такой-то</a></div>
 					    <div class="inner_course"><a href="">Курс такой-то</a></div>
 					</div>
-				</dir>	
-			</dir>
+				</div>	
+			</div>
 		</aside>
-	</dir>
+	</div>
 	<footer>© Казанский федеральный университет, 2017</footer>
 </body>
